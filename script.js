@@ -21,7 +21,7 @@ const days = [
     day: 'Quarta-feira', theme: 'Gamer, Robótica e Missões Digitais', icon: '', accent: 'green',
     mission: 'Construir e criar', question: '“Como transformar uma ideia em algo real?”',
     workshops: [
-      ['Passeio', 'Geração de memórias afetivas, valorização do aprendizado da jornada e fortalecimento de vínculos.'],
+      ['Passeio', 'Geração de memórias afetivas, valorização do aprendizado da jornada e fortalecimento de vínculos.']
       
     ],
     skills: ['Engenharia', 'Planejamento', 'Lógica', 'Criação']
