@@ -45,6 +45,7 @@ const days = [
     workshops: [
       ['Engenheiros do Futuro', 'Desafios de construção utilizando estruturas, pontes, torres e mecanismos simples.'],
       ['Grande Exposição dos Inventores', 'Preparação visual dos projetos, narrativas, apresentação, organização e comunicação das invenções.']
+    ],
     skills: ['Comunicação', 'Autoconfiança', 'Cultura científica']
   }
 ];
