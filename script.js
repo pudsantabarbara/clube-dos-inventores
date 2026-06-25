@@ -22,7 +22,6 @@ const days = [
     mission: 'Construir e criar', question: '“Como transformar uma ideia em algo real?”',
     workshops: [
       ['Passeio', 'Geração de memórias afetivas, valorização do aprendizado da jornada e fortalecimento de vínculos.'],
-  
       ['Grande Exposição dos Inventores', 'Preparação visual dos projetos, narrativas, apresentação, organização e comunicação das invenções.']
     ],
     skills: ['Engenharia', 'Planejamento', 'Lógica', 'Criação']
