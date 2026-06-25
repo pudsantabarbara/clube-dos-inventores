@@ -18,8 +18,8 @@ const days = [
     skills: ['Método científico', 'Sustentabilidade', 'Tecnologia']
   },
   {
-    day: 'Quarta-feira', theme: 'Gamer, Robótica e Missões Digitais', icon: '', accent: 'green',
-    mission: 'Construir e criar', question: '“Como transformar uma ideia em algo real?”',
+    day: 'Quarta-feira', theme: 'Compartilhar e Inspirar', icon: '', accent: 'green',
+    mission: 'Apresentar e inspirar', question: '“Como mostrar minha invenção para o mundo?”',
     workshops: [
       ['Passeio', 'Geração de memórias afetivas, valorização do aprendizado da jornada e fortalecimento de vínculos.'],
       ['Preparando a Invenção', 'Finalização dos projetos, ensaio de apresentação e celebração das conquistas da semana.']
@@ -39,8 +39,9 @@ const days = [
     skills: ['Empatia', 'Inovação', 'Prototipagem']
   },
   {
-    day: 'Sexta-feira', theme: 'Compartilhar e Inspirar', icon: '', accent: 'green',
-    mission: 'Apresentar e inspirar', question: '“Como mostrar minha invenção para o mundo?”',
+     day: 'Sexta-feira', theme: 'Gamer, Robótica e Missões Digitais', icon: '', accent: 'green',
+    mission: 'Construir, criar e compartilhar.', question: '“Como transformar uma ideia em algo real?”',
+    
     workshops: [
       ['Engenheiros do Futuro', 'Desafios de construção utilizando estruturas, pontes, torres e mecanismos simples.'],
       ['Grande Exposição dos Inventores', 'Preparação visual dos projetos, narrativas, apresentação, organização e comunicação das invenções.']
