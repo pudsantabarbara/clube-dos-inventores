@@ -23,9 +23,6 @@ const days = [
     workshops: [
       ['Passeio', 'Geração de memórias afetivas, valorização do aprendizado da jornada e fortalecimento de vínculos.'],
       ['Preparando a Invenção', 'Finalização dos projetos, ensaio de apresentação e celebração das conquistas da semana.']
-
-]
-      
     ],
     skills: ['Engenharia', 'Planejamento', 'Lógica', 'Criação']
   },
