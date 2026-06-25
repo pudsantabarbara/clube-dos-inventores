@@ -22,7 +22,7 @@ const days = [
     mission: 'Construir e criar', question: '“Como transformar uma ideia em algo real?”',
     workshops: [
       ['Passeio', 'Geração de memórias afetivas, valorização do aprendizado da jornada e fortalecimento de vínculos.'],
-      ['Grande Exposição dos Inventores', 'Preparação visual dos projetos, narrativas, apresentação, organização e comunicação das invenções.']
+      
     ],
     skills: ['Engenharia', 'Planejamento', 'Lógica', 'Criação']
   },
@@ -40,8 +40,7 @@ const days = [
     mission: 'Apresentar e inspirar', question: '“Como mostrar minha invenção para o mundo?”',
     workshops: [
       ['Engenheiros do Futuro', 'Desafios de construção utilizando estruturas, pontes, torres e mecanismos simples.'],
-      ['Preparando a Invenção', 'Finalização dos projetos, ensaio de apresentação e celebração das conquistas da semana.']
-    ],
+      ['Grande Exposição dos Inventores', 'Preparação visual dos projetos, narrativas, apresentação, organização e comunicação das invenções.']
     skills: ['Comunicação', 'Autoconfiança', 'Cultura científica']
   }
 ];
