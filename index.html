@@ -138,55 +138,170 @@
       </aside>
     </section>
 
-    <section id="links-inscricao" class="panel inscricoes">
-      <h2><span></span> Inscrições <strong>por turma</strong> <span></span></h2>
+ <style>
+  .inscricoes {
+    padding: 48px 20px;
+  }
 
-      <div class="cards-inscricao">
+  .inscricoes h2 {
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 28px;
+    color: #fff;
+  }
 
-        <a class="card-inscricao" href="https://eventosecursos.plataformadigital.niteroi.br/course/738" target="_blank" rel="noopener">
-          <span class="card-icon">🚀</span>
-          <h3>Inventores Mirins</h3>
-          <p>5 anos • Manhã • 20 vagas</p>
-          <strong>Inscrever nesta turma</strong>
-        </a>
+  .cards-inscricao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
-        <a class="card-inscricao" href="https://eventosecursos.plataformadigital.niteroi.br/course/739" target="_blank" rel="noopener">
-          <span class="card-icon">🚀</span>
-          <h3>Exploradores Criativos</h3>
-          <p>6 e 7 anos • Manhã • 20 vagas</p>
-          <strong>Inscrever nesta turma</strong>
-        </a>
+  .card-inscricao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 210px;
+    padding: 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #fff;
+    background:
+      radial-gradient(circle at top right, rgba(0, 229, 255, .35), transparent 35%),
+      linear-gradient(135deg, rgba(9, 25, 55, .96), rgba(5, 10, 25, .96));
+    border: 1px solid rgba(0, 229, 255, .35);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .35);
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
 
-        <a class="card-inscricao" href="https://eventosecursos.plataformadigital.niteroi.br/course/740" target="_blank" rel="noopener">
-          <span class="card-icon">🚀</span>
-          <h3>Jovens Inventores</h3>
-          <p>8 e 9 anos • Manhã • 20 vagas</p>
-          <strong>Inscrever nesta turma</strong>
-        </a>
+  .card-inscricao:hover {
+    transform: translateY(-6px);
+    border-color: #00e5ff;
+    box-shadow: 0 22px 55px rgba(0, 229, 255, .18);
+  }
 
-        <a class="card-inscricao orange" href="https://eventosecursos.plataformadigital.niteroi.br/course/741" target="_blank" rel="noopener">
-          <span class="card-icon">🚀</span>
-          <h3>Makers em Ação</h3>
-          <p>10 anos • Tarde • 20 vagas</p>
-          <strong>Inscrever nesta turma</strong>
-        </a>
+  .card-inscricao.orange {
+    background:
+      radial-gradient(circle at top right, rgba(255, 138, 0, .35), transparent 35%),
+      linear-gradient(135deg, rgba(58, 27, 0, .96), rgba(12, 9, 4, .96));
+    border-color: rgba(255, 184, 77, .4);
+  }
 
-        <a class="card-inscricao orange" href="https://eventosecursos.plataformadigital.niteroi.br/course/742" target="_blank" rel="noopener">
-          <span class="card-icon">🚀</span>
-          <h3>Inventores do Futuro</h3>
-          <p>11 e 12 anos • Tarde • 20 vagas</p>
-          <strong>Inscrever nesta turma</strong>
-        </a>
+  .card-inscricao.orange:hover {
+    border-color: #ffb84d;
+    box-shadow: 0 22px 55px rgba(255, 138, 0, .18);
+  }
 
-        <a class="card-inscricao orange" href="https://eventosecursos.plataformadigital.niteroi.br/course/743" target="_blank" rel="noopener">
-          <span class="card-icon">🚀</span>
-          <h3>Engenheiros do Amanhã</h3>
-          <p>13 e 14 anos • Tarde • 20 vagas</p>
-          <strong>Inscrever nesta turma</strong>
-        </a>
+  .card-icon {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, .12);
+    backdrop-filter: blur(8px);
+  }
 
-      </div>
-    </section>
+  .card-inscricao h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+
+  .card-inscricao p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .78);
+  }
+
+  .card-inscricao strong {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    border-radius: 999px;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: #031018;
+    background: #00e5ff;
+  }
+
+  .card-inscricao.orange strong {
+    background: #ffb84d;
+    color: #1b0d00;
+  }
+
+  @media (max-width: 600px) {
+    .inscricoes {
+      padding: 36px 14px;
+    }
+
+    .cards-inscricao {
+      grid-template-columns: 1fr;
+    }
+
+    .card-inscricao {
+      min-height: 190px;
+      padding: 20px;
+    }
+  }
+</style>
+
+<section id="links-inscricao" class="panel inscricoes">
+  <h2>Inscrições <strong>por turma</strong></h2>
+
+  <div class="cards-inscricao">
+    <a class="card-inscricao" href="https://eventosecursos.plataformadigital.niteroi.br/course/738" target="_blank" rel="noopener">
+      <span class="card-icon"></span>
+      <h3>Inventores Mirins</h3>
+      <p>5 anos • Manhã • 20 vagas</p>
+      <strong>Inscrever nesta turma</strong>
+    </a>
+
+    <a class="card-inscricao" href="https://eventosecursos.plataformadigital.niteroi.br/course/739" target="_blank" rel="noopener">
+      <span class="card-icon"></span>
+      <h3>Exploradores Criativos</h3>
+      <p>6 e 7 anos • Manhã • 20 vagas</p>
+      <strong>Inscrever nesta turma</strong>
+    </a>
+
+    <a class="card-inscricao" href="https://eventosecursos.plataformadigital.niteroi.br/course/740" target="_blank" rel="noopener">
+      <span class="card-icon"></span>
+      <h3>Jovens Inventores</h3>
+      <p>8 e 9 anos • Manhã • 20 vagas</p>
+      <strong>Inscrever nesta turma</strong>
+    </a>
+
+    <a class="card-inscricao orange" href="https://eventosecursos.plataformadigital.niteroi.br/course/741" target="_blank" rel="noopener">
+      <span class="card-icon"></span>
+      <h3>Makers em Ação</h3>
+      <p>10 anos • Tarde • 20 vagas</p>
+      <strong>Inscrever nesta turma</strong>
+    </a>
+
+    <a class="card-inscricao orange" href="https://eventosecursos.plataformadigital.niteroi.br/course/742" target="_blank" rel="noopener">
+      <span class="card-icon"></span>
+      <h3>Inventores do Futuro</h3>
+      <p>11 e 12 anos • Tarde • 20 vagas</p>
+      <strong>Inscrever nesta turma</strong>
+    </a>
+
+    <a class="card-inscricao orange" href="https://eventosecursos.plataformadigital.niteroi.br/course/743" target="_blank" rel="noopener">
+      <span class="card-icon"></span>
+      <h3>Engenheiros do Amanhã</h3>
+      <p>13 e 14 anos • Tarde • 20 vagas</p>
+      <strong>Inscrever nesta turma</strong>
+    </a>
+  </div>
+</section>
 
     <footer id="contato" class="footer panel">
       <img class="mini-robot" src="assets/robo-pud.png" alt="Robô da PUD" />
